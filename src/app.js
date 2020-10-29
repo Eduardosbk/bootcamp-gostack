@@ -69,7 +69,7 @@ app.delete("/repositories/:id", (req, res) => {
     return res.status(400).json({ error: 'Repository does not exists!'});
   }
 
-   res.status(400).send();
+   res.status(204).send();
 });
 
 app.post("/repositories/:id/like", (req, res) => {
